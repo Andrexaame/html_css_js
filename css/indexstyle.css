@@ -1,26 +1,4 @@
-*
-{
-	margin: 0;
-	padding: 0;
-	background: #d4d4d4;
-}
-
-body
-{
-	font-family: sans-serif, monospace;
-	font-size: 15px;
-}
-
 a
 {
-	text-decoration: none;
-	color: #ff00ff;
-	background-color: aqua;
-	border-radius: 12px;
-}
-
-a:hover
-{
-	color: aqua;
-	background-color: #ff00ff;
+	text-decoration:  none;
 }
