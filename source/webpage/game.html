@@ -6,12 +6,10 @@
 </head>
 <body>
 	<main>
+		
 		<article class="littleGame">
 			<h1>¿Quieres saber tu peso en otro planeta?</h1>
 			<form>
-				<label for="name">Nombre:</label>
-				<input type="text" name="name" id="name">
-
 				<label for="weight">Peso en la tierra:</label>
 				<input type="number" name="peso" id="weight">
 
@@ -24,9 +22,78 @@
 						<option value="saturno">Saturno</option>
 				</select>
 
-				<input type="submit" name="submit" value="Calcular peso">
+				<input onclick="calcular()" type="submit" name="submit" value="Calcular peso">
 			</form>
 		</article> 
+
+		<section>
+			<script type="text/javascript">
+
+				function calcular() {
+					let peso = document.getElementById('weight')
+					alert("SU PESO EN LA TIERRA ES: " + peso.value);
+				}
+				//obtener valor por id
+				//var peso = document.getElementById('weight');
+				
+
+				//Horas en minutos y total ganado
+				/*
+				var horas_trabajadas;
+				var total_cobrar, minutos;
+
+				horas_trabajadas = prompt("Ingrese la cantidad de horas trabajadas")
+
+				total_cobrar = 4229; minutos = horas_trabajadas * 60;
+				console.log("Total ganado: " + total_cobrar); 
+				console.log("Minutos trabajados: " + minutos); 
+				*/
+
+				//Nombre Porcentaje de meses trabajados
+				/*
+				var meses_trabajados;
+				var porcentaje;
+
+				var nombre_usuario = prompt("Por favor ingrese su nombre: ")
+				
+				parseInt(meses_trabajados = prompt("Ingrese la cantidad de meses trabajados"));
+				porcentaje = meses_trabajados * 100 / 12;
+				
+				console.log("Hola, " + nombre_usuario);
+				console.log(meses_trabajados);
+				console.log(porcentaje + "%"); 
+				*/
+
+				//Cambio de peso a dolar
+				/*
+				var pesos, dolares;
+				parseInt( pesos = prompt("Ingrese la cantidad de pesos a cambiar: "));
+
+				dolares = pesos / 3765;
+
+				console.log("Pesos: " + pesos);
+				console.log("Dolares " + dolares);
+				*/
+
+				//Aprueba mayor a 70 - error
+				/*
+				let nota1, nota2, nota3, promedio;
+				parseInt(nota1 = prompt("Ingrese la nota 1: "));
+				parseInt(nota2 = prompt("Ingrese la nota 2: "));
+				parseInt(nota3 = prompt("Ingrese la nota 3: "));
+
+				promedio = (nota1 + nota2 + nota3)/3;
+
+				if(promedio >= 70){
+					console.log("Su calificacion final es de: "+ promedio + " Aprobado")
+					console.log("Aprobado");
+				}else{
+					console.log("Su calificacion final es de: "+ promedio + " Reprobado")
+					console.log("Reprobado");
+				}
+				*/
+			</script>
+		</section>
 	</main>
 </body>
 </html>
